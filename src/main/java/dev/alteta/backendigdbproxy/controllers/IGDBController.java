@@ -32,8 +32,8 @@ public class IGDBController {
         try {
             HttpPost httpPost = new HttpPost(url);
 
-            httpPost.addHeader("Client-ID", "224uakfqq964byjfi7vq8rctduvpr8"); // Should be an environment variable
-            httpPost.addHeader("Authorization", "Bearer sky0m9767ov0hk65cwq7rrs2c5inyk"); // Should be an environment variable
+            httpPost.addHeader("Client-ID", System.getenv("Client-ID")); // Should be an environment variable
+            httpPost.addHeader("Authorization", System.getenv("Authorization")); // Should be an environment variable
 
             Gson gson = new Gson();
 
