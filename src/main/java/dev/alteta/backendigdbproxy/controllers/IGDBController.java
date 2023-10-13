@@ -37,7 +37,6 @@ public class IGDBController {
 
             Gson gson = new Gson();
 
-            // Assuming you have a payload string, replace 'payloadString' with the actual payload
             String payloadString = body;
             byte[] payloadBytes = payloadString.getBytes();
 
@@ -56,8 +55,6 @@ public class IGDBController {
                 String responseBody = EntityUtils.toString(responseEntity);
 
                 System.out.println(statusCode);
-                // Process the response as needed
-                // You can return the response body or perform other operations based on the status code
 
                 return responseBody;
             }
